@@ -176,7 +176,7 @@ fragment LETTER:            [a-zA-Z_];
 fragment ALPHABET:          [a-zA-Z_0-9];
 fragment BLOCKCOMSTART:     '/*';
 fragment BLOCKCOMCON:       ~'*'|'*'~'/';
-fragment BLOCKCOMEND:       '*/';
+fragment BLOCKCOMEND:       '*'+'/';
 
 INT:            DEC | OCT | HEX;
 FLOAT:          DECDIGIT+ '.' DECDIGIT+ | DECDIGIT* '.' DECDIGIT+ EXPSUF | DECDIGIT+ '.' EXPSUF;
